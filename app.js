@@ -23,8 +23,8 @@ const server = http.createServer(function (req, res) {
     });
 });
 
-server.listen(1234, function () {
-    console.log('Listening on port 1234');
+server.listen(80, function () {
+    console.log('Listening on port 80');
 });
 
 let gates = "closed"
