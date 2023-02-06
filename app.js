@@ -3,10 +3,6 @@ const url = require('url');
 const fs = require('fs');
 const StringDecoder = require("string_decoder").StringDecoder;
 const util = require('util');
-const formidable = require("formidable");
-const { type } = require('os');
-const { decode } = require('punycode');
-const { default: test } = require('node:test');
 
 const server = http.createServer(function (req, res) {
     let path = url.parse(req.url, true);
